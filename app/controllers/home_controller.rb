@@ -5,7 +5,6 @@ class HomeController < ApplicationController
       lattitude: -122.423,
       params: { units: 'si', time: Time.now.to_i }
     )
-    @results = forecast.get_forecast
-    # ForecastIo::ForecastParse.new
+    @results = forecast.get_sunny_weather
   end
 end
